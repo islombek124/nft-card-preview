@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main
+{
+  width: 330px;
+  height: 550px;
+  border-radius: 20px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px;
+}
+
+.pic
+{
+  border-radius: 10px;
+  width: 100%;
+  background: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.hover__mode
+{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.6);
+  z-index: 13314;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.pic:hover
+{
+  cursor: pointer;
+}
+
+.pic:hover .hover__mode
+{
+  opacity: 1;
+}
+
+.paragraph
+{
+  font-size: 16px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+h2
+{
+  color: white;
+  font-size: 23px;
+  transition: all 0.4s;
+}
+
+h2:hover
+{
+  color: cyan;
+  cursor: pointer;
+}
+
+.price
+{
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.paer p
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+main h3
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+main .line
+{
+  width: 100%;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+  display: block;
+  position: relative;
+  bottom: 10px;
+}
+
+.user
+{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user img
+{
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.user p
+{
+  color: hsl(215, 51%, 70%);
+}
+
+.user__name
+{
+  color: white;
+  font-weight: 300;
+  transition: all 0.4s;
+}
+
+.user__name:hover
+{
+  color: cyan;
+  cursor: pointer;
+}
